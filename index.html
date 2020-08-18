@@ -4,29 +4,40 @@
     <meta charset="UTF-8">
     <title>Lukasz Lesiuk Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="testStyle.css">
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet"> 
 </head>
-<body> 
-    <header>
-        <div class="main">
-            <h1 class="pageTitle">My Portfolio</h1>
-            <nav>
-                <ul class="nav_links">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact Me</a></li>
-                </ul>
-            </nav>
-        </div>
+<div class="box">
+  <header class="row header">
+    <h1 class="pageTitle">My Portfolio</h1>
+    <nav>
+        <ul class="nav_links">
+            <li><a href="index.html">About me</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+    </nav>
     </header>
-    <div class="content">
-        <h1> here goes content</h1>    
-    </div>
-    <footer>
-        <hi> here goes footer</hi>
-    </footer>
-</body>
-
+  <div class="row content">
+    <div class="splitRow">
+        <div class="columnLeft">
+            <img src="resources/myPhoto.jpeg" alt="MyPhoto">
+        </div>
+        <div class="columnRight">
+            <h1 class="textHeader">My name is Łukasz Lesiuk. I am mechanical engineer, and aspiring web developer. 
+                In my free time, I enjoy swimming and dancing ballrom dancing.
+            </h1>
+            <h2 class="textSmaller">You may be interested in checking out some of my <a class="inTextLink" href="projects.html">projects</a> ,
+                    or learning more about my <a class="inTextLink" href="skills.html">skills</a>.
+                If you have any questions - please contact me through <a class="inTextLink" href="contact.html">from</a>, or <a class="inTextLink" href="mailto:lukasz.lesiuk.2@gmail.com">write email directly</a>.
+            </h2>
+        </div>
+    </div> 
+  </div>
+  <div class="row footer">
+    <div class="contact">Contact me:</div>
+    <a class="mail" href="mailto:lukasz.lesiuk.2@gmail.com">lukasz.lesiuk.2@gmail.com</a>  
+  </div>
+</div>
 </html>
