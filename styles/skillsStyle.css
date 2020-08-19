@@ -1,0 +1,47 @@
+.workingKnowledge{
+
+    float: left;
+    /* min-width: 300px; */
+    width: 33%;
+    min-width: 9rem;
+    padding: 1rem;
+    background-color: beige;  
+
+}
+
+
+.knowSthAbout{
+    flex: 1 1 auto;
+    padding: 1rem;
+    width: 34%;
+    min-width: 9rem;
+    background-color: rgb(167, 176, 196);  
+    ;
+}
+
+.wantToLearn {
+    float: rigth;
+    width: 33%;
+    min-width: 9rem;
+    flex: 1 1 auto;
+    padding: 1rem;
+    /* min-width: 300px; */
+    background-color: beige;  
+}
+
+.skill{
+    display: grid;
+    margin: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    grid-gap: 22px;
+    list-style: none;
+}
+
+.sectionTitle {
+    flex: 3 3 auto;
+    padding: 1rem;
+    color: black;
+    width: 8rem;
+    min-width: 7rem;    
+    background-color: rgb(225, 225, 226);
+}

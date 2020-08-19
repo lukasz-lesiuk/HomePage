@@ -4,33 +4,43 @@
     <meta charset="UTF-8">
     <title>Lukasz Lesiuk Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/contactStyle.css">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet"> 
 </head>
 <div class="box">
   <header class="row header">
-    <p>
-        <h1 class="pageTitle">My Portfolio</h1>
-        <nav>
-            <ul class="nav_links">
-                <li><a href="index.html">About me</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact Me</a></li>
-            </ul>
-        </nav>
-    </p>
-    </header>
+    <h1 class="pageTitle">My Portfolio</h1>
+    <nav>
+        <ul>
+          <li class="nav_links"><a href="index.html">About me</a></li>
+          <li class="nav_links"><a href="skills.html">Skills</a></li>
+          <li class="nav_links"><a href="projects.html">Projects</a></li>
+          <li class="nav_links"><a href="contact.html">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
   <div class="row content">
-    <p>
+    <div>
+        <h2 class="contactHeader">Contact me</h2>
+        <form action="/action_page.php" class="contactForm">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name..">
         
-    </p>
+            <label for="email">Email adress</label>
+            <input type="text" id="email" name="lastname" placeholder="Your email..">
+           
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        
+            <input type="submit" value="Submit" disabled="disabled">
+        </form>
+    </div>
+    
   </div>
   <div class="row footer">
-    <p>
-        <div class="contact">Contact me:</div>
-        <div class="mail" a href="mailto:lukasz.lesiuk.2@gmail.com">lukasz.lesiuk.2@gmail.com</div>  
-    </p>
+    <div class="contact">Contact me:</div>
+    <div class="mail" a href="mailto:lukasz.lesiuk.2@gmail.com">lukasz.lesiuk.2@gmail.com</div>  
   </div>
 </div>
 </html>
